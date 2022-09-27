@@ -1,27 +1,21 @@
 import type { Component } from 'solid-js';
-
-import logo from './logo.svg';
-import styles from './App.module.css';
+import Grid from './components/grid';
 
 const App: Component = () => {
-  return (
-    <div class={styles.App}>
-      <header class={styles.header}>
-        <img src={logo} class={styles.logo} alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          class={styles.link}
-          href="https://github.com/solidjs/solid"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn Solid
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <Grid cols={3} gap='md'>
+                <img src="https://picsum.photos/400/300" alt="" />
+                <img src="https://picsum.photos/400/300" alt="" />
+                <img src="https://picsum.photos/400/300" alt="" />
+                <img src="https://picsum.photos/400/300" alt="" />
+                <img src="https://picsum.photos/400/300" alt="" />
+                <img src="https://picsum.photos/400/300" alt="" />
+                <img src="https://picsum.photos/400/300" alt="" />
+                <img src="https://picsum.photos/400/300" alt="" />
+            </Grid>
+        </>
+    );
 };
 
 export default App;
