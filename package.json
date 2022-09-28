@@ -14,7 +14,8 @@
         "sass": "^1.55.0",
         "typescript": "^4.8.2",
         "vite": "^3.0.9",
-        "vite-plugin-solid": "^2.3.0"
+        "vite-plugin-solid": "^2.3.0",
+        "vite-tsconfig-paths": "^3.5.1"
     },
     "dependencies": {
         "@picocss/pico": "^1.5.5",

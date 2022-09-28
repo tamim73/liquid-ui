@@ -1,10 +1,13 @@
 import type { Component } from 'solid-js';
-import Grid from './components/grid';
+import Container from './components/container';
+import { Form, Grid, Space } from '@components';
+
 
 const App: Component = () => {
     return (
-        <>
-            <Grid cols={3} gap='md'>
+        <Container>
+            <h1>Grid</h1>
+            <Grid cols={3} gap="md" colsMd={2}>
                 <img src="https://picsum.photos/400/300" alt="" />
                 <img src="https://picsum.photos/400/300" alt="" />
                 <img src="https://picsum.photos/400/300" alt="" />
@@ -14,7 +17,11 @@ const App: Component = () => {
                 <img src="https://picsum.photos/400/300" alt="" />
                 <img src="https://picsum.photos/400/300" alt="" />
             </Grid>
-        </>
+
+            <Space h={150} />
+            <h1>From</h1>
+            <Form></Form>
+        </Container>
     );
 };
 

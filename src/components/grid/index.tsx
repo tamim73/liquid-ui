@@ -1,10 +1,8 @@
 import { For } from 'solid-js';
 import { JSX } from 'solid-js/jsx-runtime';
-import { lgQuery, smQuery, mdQuery } from '../../core/breakpoints';
-import { Spacing, spacing } from '../../core/spacing';
 import { css } from 'solid-styled-components';
-
-export interface GridProps {
+import { lgQuery, mdQuery, smQuery, Spacing, spacing } from '@core'
+interface GridProps {
     children: JSX.Element[];
     gap?: Spacing;
     gapRow?: Spacing;
@@ -14,9 +12,9 @@ export interface GridProps {
     colsMd?: number;
     colsLg?: number;
     justify?: 'auto' | 'start' | 'end' | 'center' | 'stretch' | 'baseline';
-    align: 'auto' | 'start' | 'end' | 'center' | 'stretch' | 'baseline';
+    align?: 'auto' | 'start' | 'end' | 'center' | 'stretch' | 'baseline';
 }
-function Grid(props: GridProps) {
+export function Grid(props: GridProps) {
     return (
         <div
             class={css({
@@ -42,5 +40,3 @@ function Grid(props: GridProps) {
         </div>
     );
 }
-
-export default Grid;
