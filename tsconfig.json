@@ -1,20 +1,25 @@
 {
-    "compilerOptions": {
-        "strict": false,
-        "target": "ESNext",
-        "module": "ESNext",
-        "moduleResolution": "node",
-        "allowSyntheticDefaultImports": true,
-        "esModuleInterop": true,
-        "jsx": "preserve",
-        "jsxImportSource": "solid-js",
-        "types": ["vite/client"],
-        "noEmit": true,
-        "isolatedModules": true,
-        "baseUrl": ".",
-        "paths": {
-            "@components": ["src/components/_index.ts"],
-            "@core": ["src/core/_index.ts"]
-        }
-    }
+  "compilerOptions": {
+    "strict": false,
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "noEmit": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "types": [],
+    "baseUrl": "."
+  },
+  "include": ["src", "dev/App.tsx"],
+  "exclude": ["node_modules", "dist"],
+  "paths": {
+    "@components": ["src/components/_index.ts"],
+    "@core": ["src/core/_index.ts"]
+  }
 }

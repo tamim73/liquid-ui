@@ -1,5 +1,5 @@
-const mobile = 680;
-const tablet = 1200;
+export const mobile = 680;
+export const tablet = 1200;
 
 export const isSm = () => window.innerWidth <= mobile;
 export const isMd = () => window.innerWidth > mobile && window.innerWidth < tablet;

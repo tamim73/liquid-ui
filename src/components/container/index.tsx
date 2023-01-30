@@ -1,9 +1,9 @@
 import { JSX } from 'solid-js/jsx-runtime';
 
-export interface ContainerProps {
+interface Props {
     children: JSX.Element;
 }
-function Container(props: ContainerProps) {
+export function Container(props: Props) {
     return <div class="container">{props.children}</div>;
 }
 

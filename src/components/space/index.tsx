@@ -1,10 +1,10 @@
-import { spacing, Spacing } from "@core";
+import { spacing, Spacing } from "../../core/_index";
 
-interface SpaceProps {
+interface Props {
     h?: Spacing | number;
     w?: Spacing | number;
 }
-export function Space(props: SpaceProps) {
+export function Space(props: Props) {
     return (
         <div
             style={{

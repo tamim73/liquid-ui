@@ -1,5 +1,5 @@
 import { Show } from 'solid-js';
-import {COLORS} from '@core';
+import {COLORS} from '../../core/_index';
 import { JSX } from 'solid-js/jsx-runtime';
 
 interface Props {

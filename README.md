@@ -1,31 +1,36 @@
-## Usage
+<p>
+  <img width="100%" src="https://assets.solidjs.com/banner?type=@tamim73/liquid-ui&background=tiles&project=%20" alt="@tamim73/liquid-ui">
+</p>
 
-Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.
+# @tamim73/liquid-ui
 
-This is the reason you see a `pnpm-lock.yaml`. That being said, any package manager will work. This file can be safely be removed once you clone a template.
+[![pnpm](https://img.shields.io/badge/maintained%20with-pnpm-cc00ff.svg?style=for-the-badge&logo=pnpm)](https://pnpm.io/)
+
+Liquid UI for Solid JS
+
+> **Note** After using this template, you have to search and replace all `@tamim73/liquid-ui` and similar strings
+> with appropriate texts.
+>
+> `@tamim73/liquid-ui` should be a **kebab-case** string representing the name of you monorepo.
+>
+> `Liquid UI for Solid JS` should be a **Normal case** string with the description of the repository.
+>
+> `tamim73` should be a **kebab-case** string from your profile URL.
+
+## Quick start
+
+Install it:
 
 ```bash
-$ npm install # or pnpm install or yarn install
+npm i @tamim73/liquid-ui
+# or
+yarn add @tamim73/liquid-ui
+# or
+pnpm add @tamim73/liquid-ui
 ```
 
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
+Use it:
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm dev` or `npm start`
-
-Runs the app in the development mode.<br> Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-
-### `npm run build`
-
-Builds the app for production to the `dist` folder.<br> It correctly bundles Solid in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br> Your app is ready to be deployed!
-
-## Deployment
-
-You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.)
+```tsx
+import @tamim73/liquid-ui from '@tamim73/liquid-ui'
+```

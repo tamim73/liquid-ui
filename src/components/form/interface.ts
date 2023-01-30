@@ -19,7 +19,7 @@ export type FormNonInputItem = Form_Section | Form_Header | Form_Space;
 /* -------------------------------------------------------------------------- */
 
 export interface FormField_Text extends FormFieldBase {
-    type: 'text';
+    type: "text";
     min?: number;
     max?: number;
     minWords?: number;
@@ -27,31 +27,31 @@ export interface FormField_Text extends FormFieldBase {
     secret?: boolean;
 }
 export interface FormField_Number extends FormFieldBase {
-    type: 'number';
+    type: "number";
 }
 export interface FormField_Phone extends FormFieldBase {
-    type: 'phone';
+    type: "phone";
 }
 export interface FormField_Date extends FormFieldBase {
-    type: 'date';
+    type: "date";
 }
 export interface FormField_Time extends FormFieldBase {
-    type: 'time';
+    type: "time";
 }
 export interface FormField_Check extends FormFieldBase {
-    type: 'check';
+    type: "check";
 }
 export interface FormField_Pattern extends FormFieldBase {
-    type: 'pattern';
+    type: "pattern";
 }
 export interface FormField_Email extends FormFieldBase {
-    type: 'email';
+    type: "email";
 }
 export interface FormField_Area extends FormFieldBase {
-    type: 'area';
+    type: "area";
 }
 export interface FormField_Select extends FormFieldBase {
-    type: 'select';
+    type: "select";
     options: FormFieldSelectOption[];
     multi?: boolean;
 }
@@ -60,16 +60,16 @@ export interface FormField_Select extends FormFieldBase {
 /*                                 Separators                                 */
 /* -------------------------------------------------------------------------- */
 interface Form_Section extends FormItemBase {
-    type: 'section';
+    type: "section";
     title: string;
     description: string;
 }
 interface Form_Header extends FormItemBase {
-    type: 'header';
+    type: "header";
     title: string;
 }
 interface Form_Space extends FormItemBase {
-    type: 'space';
+    type: "space";
 }
 
 /* -------------------------------------------------------------------------- */
@@ -77,16 +77,16 @@ interface Form_Space extends FormItemBase {
 /* -------------------------------------------------------------------------- */
 interface FormFieldBase extends FormItemBase {
     type:
-        | 'text'
-        | 'number'
-        | 'phone'
-        | 'date'
-        | 'time'
-        | 'check'
-        | 'pattern'
-        | 'email'
-        | 'area'
-        | 'select';
+        | "text"
+        | "number"
+        | "phone"
+        | "date"
+        | "time"
+        | "check"
+        | "pattern"
+        | "email"
+        | "area"
+        | "select";
     required?: boolean;
     label?: string;
     placeholder?: string;
